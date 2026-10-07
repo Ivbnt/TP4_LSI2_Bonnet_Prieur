@@ -1,6 +1,6 @@
 # TP 4
 
-Antoine Prieur & Yvane Bonnet
+Antoine Prieur & Ivane Bonnet
 
 ---
 
@@ -76,7 +76,11 @@ En ce qui concerne les logs, nous avons ajouté un log de chaque type (info, war
 ---
 
 # Question 5
+## 5.4
+On choisit une seule table pour toute la hiérarchie : la recherche « salaire > seuil » porte sur un attribut commun et devient un simple SELECT … WHERE, alors qu'une table par classe obligerait à interroger chaque table et à fusionner les résultats.    
 
+## 5.5
+la stack trace sert au développeur pour diagnostiquer, alors que l'utilisateur a besoin d'un message simple qui lui dit quoi faire. Le code doit intercepter l'erreur pour donner les deux.
 
 
 ---
