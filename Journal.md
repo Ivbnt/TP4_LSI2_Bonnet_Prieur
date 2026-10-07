@@ -53,6 +53,30 @@ Lorsqu'un camarade récupère le projet, il peut simplement utiliser Maven pour 
 
 # Question 4
 
+Dans le debuger concernant l'augmentation négative de salaire:
+
+"
+
+Pile d'appels (Frames) : 
+
+augmenterSalaire (Collaborateur.java:45) 
+
+    pourcentage  = -50.0
+
+    this.salaire = 42000.0 
+
+main (HelloEfrei.java:87)
+
+"
+
+la ligne 45-47 dans Collaborateur  ignore en silence une valeur interdite, corriger l'affichage du menu ne sert à rien, il faudrait mettre un try/catch qui affiche le message. 
+
+En ce qui concerne les logs, nous avons ajouté un log de chaque type (info, warn, debug, error). L'enjeu a été de les ajoutés dans des classes qui ne communique pas directement avec l'user (HelloEfrei). C'est comme cela que nous avons ajouté des logs à "ajouter" dans Annuaire ainsi que dans "aumenterSalaire" dans Collaborateur.
+
+---
+
+# Question 5
+
 
 
 ---
